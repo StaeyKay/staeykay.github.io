@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header {
+        background-color: aqua;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        background-color: black;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 14px 20px;
+    }
+    .navbar a:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .leftmain {
+        background-color: rgb(243, 241, 241);;
+        padding: 20px;
+        flex: 30%;
+    }
+    .rightmain {
+        padding: 20px;
+        flex: 70%;
+    }
+    .fakeimg {
+        width: 100%;
+        background-color: grey;
+        padding: 20px;
+    }
+    .footer {
+        text-align: center;
+        padding: 30px;
+        background-color: lightgrey;
+    }
+    @media screen and (max-width:800px) {
+        .leftmain, .rightmain {
+            flex: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <em>flexible</em> layout.</p>
+    </div>
+    <div class="navbar">
+        <a href="https://drive.google.com/drive/my-drive">Link</a>
+        <a href="https://drive.google.com/drive/my-drive">Link</a>
+        <a href="https://drive.google.com/drive/my-drive">Link</a>
+        <a href="https://drive.google.com/drive/my-drive">Link</a>
+    </div>
+    <div class="main">
+        <div class="leftmain">
+            <h2>About Me</h2>
+            <p>Photo of me:</p>
+            <p class="fakeimg" style="height: 200px;">Image</p>
+            <p>Some text about me in 
+                culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <p class="fakeimg" style="height: 60px;">Image</p>
+            <p class="fakeimg" style="height: 60px;">Image</p>
+            <p class="fakeimg" style="height: 60px;">Image</p>
+        </div>
+        <div class="rightmain">
+            <h2>TITLE HEADING</h2>
+            <p>Title description, Dec 7, 2017.</p>
+            <p class="fakeimg" style="height: 200px;">Image</p>
+            <p>Some text...</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim 
+                id est laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et
+                 dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco.</p>
+            <h2>TITLE HEADING</h2>
+            <p><small>Title description, Sep, 2, 2022</small></p>
+            <p class="fakeimg" style="height: 200px;">Image</p>
+            <p>Some text...</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id 
+                est laborum consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>

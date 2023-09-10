@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Styling Links</title>
+    <style>
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: green;
+        }
+        
+        a.one:hover{color: yellow;}
+        a.one:active {color: hotpink;}
+
+        a.two:hover {
+            font-size: 30px;
+        }
+
+        a.three:hover {
+            background-color: rgb(22, 211, 38);
+        }
+        a.four:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a.five:link {text-decoration: none;}
+        a.five:hover {text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h2>Styling Links</h2>
+    <p>Mouse over the links and watch them change layout:</p>
+    <p><b><a class="one" href="https://e-portal.ictp.it/applicant/login">This link changes color</a></b></p>
+    <p><b><a class="two" href="https://e-portal.ictp.it/applicant/login">This link changes font-size</a></b></p>
+    <p><b><a class="three" href="https://e-portal.ictp.it/applicant/login">This link changes background-color</a></b></p>
+    <p><b><a class="four" href="https://e-portal.ictp.it/applicant/login">This link changes font-family</a></b></p>
+    <p><b><a class="five" href="https://e-portal.ictp.it/applicant/login">This link changes text-decoration</a></b></p>
+</body>
+</html>

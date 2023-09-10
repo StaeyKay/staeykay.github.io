@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .header {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(58, 50, 50);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .leftmain {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .rightmain {
+            flex: 70%;
+            padding: 20px;
+        }
+        .fakeimg {
+            background-color: #9e9797;
+            width: 100%;
+            padding: 20px;
+        }
+        @media screen and (max-width:800px) {
+            .leftmain, .rightmain {
+                flex: 100%;
+            }
+        }
+        .footer {
+            background-color: #e0dddd;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout</p>
+    </div>
+    <div class="navbar">
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+    </div>
+    <div class="main">
+        <div class="leftmain">
+            <h2>About Me</h2>
+            <p><b>Photo of me:</b></p>
+            <p class="fakeimg" style="height: 200px;">Image</p>
+            <p>Some text about me in 
+                culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <p class="fakeimg" style="height: 60px;">Image</p>
+            <p class="fakeimg" style="height: 60px;">Image</p>
+            <p class="fakeimg" style="height: 60px;">Image</p>
+        </div>
+        <div class="rightmain">
+            <h2>TITLE HEADING</h2>
+            <p><b>Title description, March 8, 2023</b></p>
+            <p class="fakeimg" style="height: 200px;">Image</p>
+            <p>Some text...</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim 
+             id est laborum consectetur adipiscing elit, sed do 
+             eiusmod tempor incididunt ut labore et dolore magna 
+             aliqua. Ut enim ad minim veniam, quis nostrud 
+             exercitation ullamco.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

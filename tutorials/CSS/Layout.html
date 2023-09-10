@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+        }
+        .header h1 {
+            font-size: 50px;
+        }
+        .topnav {
+            
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 14px 16px;
+            float: left;
+            text-align: center;
+        }
+        .navbar a:hover {
+            color: black;
+            background-color: red;
+        }
+        .leftcolumn {
+            width: 75%;
+            float: left;
+            background-color: #f1f1f1;
+            margin: 10px;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+        }
+        @media screen and (max-width:600px) {
+     .content {
+       width: 100%;
+       }
+    }
+     .footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 15px;
+     }
+     div.footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+     }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser to see the responsive effect.</p>
+    </div>
+    <div class="topnav">
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+        <a href="https://www.ictp.it/home/scientific-calendar">Link</a>
+    </div>
+    <div class="leftcolumn">
+       <h2>TITLE HEADING</h2><br>
+       <p><b>Title description, Dec, 7, 2017</b></p>
+       <div class="inner">
+          <p>Image</p>
+       </div>
+    </div>
+    <div class="rightcolumn">
+        <h1>About Me</h1>
+    </div>
+    
+    
+</body>
+</html>

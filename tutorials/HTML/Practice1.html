@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+      .header {
+         background-color: aqua;
+         color: white;
+         text-align: center;
+         padding: 20px;
+      }
+      .nav {
+         display: flex;
+         background-color: black;
+         flex-wrap: wrap;
+      }
+      .nav a {
+         color: white;
+         padding: 10px;
+         text-decoration: none;
+      }
+      .nav a:hover {
+         background-color: rgb(220, 220, 220);
+         color: black;
+      }
+      .main {
+         display: flex;
+         flex-wrap: wrap;
+      }
+      .leftmain {
+         flex: 30%;
+         background-color: rgb(245, 245, 245);
+         padding: 15px;
+      }
+      .rightmain {
+         flex: 70%;
+         background-color: white;
+         padding: 15px;
+      }
+      .fakeimage {
+         background-color: rgb(220, 220, 220);
+         height: 250px;
+         width: 100%;
+         padding: 10px;
+      }
+      .footer {
+         background-color: rgb(210, 210, 210);
+         text-align: center;
+         padding: 20px;
+      }
+      @media  screen and (max-width:600px) {
+         .leftmain, .rightmain {
+            flex: 100%;
+         }
+         
+      }
+   </style>
+</head>
+<body>
+   <div class="header">
+      <h1>My Website</h1>
+      <p>With a <b>flexible</b> layout.</p>
+   </div>
+   <div class="nav">
+      <a href="#C4">Link</a>
+      <a href="#C4">Link</a>
+      <a href="#C4">Link</a>
+      <a href="#C4">Link</a>
+   </div>
+   <div class="main">
+      <div class="leftmain">
+         <h3>About Me</h3>
+         <h4>Photo of me:</h4>
+         <div class="fakeimage">
+            <p>Image</p>
+         </div>
+         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+         <h3>More Text</h3>
+         <p>Lorem ipsum dolor sit ame.</p>
+         <p class="fakeimage" style="height:60px;">Image</p>
+         <p class="fakeimage" style="height:60px;">Image</p>
+         <p class="fakeimage" style="height:60px;">Image</p>
+      </div>
+      <div class="rightmain">
+         <h3>TITLE HEADING</h3>
+         <h4>Title description, March 8, 2023</h4>
+         <div class="fakeimage">
+            <p>Image</p>
+         </div>
+         <p>Some text...</p>
+         <p>Sunt in culpa qui officia deserunt mollit anim id est 
+            laborum consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>  
+   </div>
+   <div class="footer">
+      <h1>Footer</h1>
+   </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        .black-box {
+            position: relative;
+            border: 2px solid black;
+            height: 100px;
+            margin: 10px;
+            z-index: 1;
+        }
+        .green-box {
+            position: absolute;
+            background-color: #6cf06c;
+            top: -10px;
+            bottom: 0px;
+            right: 140px;
+            width: 40%;
+            z-index: 2;
+        }
+        .grey-box {
+            position: absolute;
+            background-color: grey;
+            bottom: -7px;
+            left: 30px;
+            width: 73%;
+            height: 60px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-index Example</h1>
+    <p>An element with gretaer stack order is always above an element with lower stack order.</p>
+    <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+        <div class="grey-box">Gray box (z-index: 3)</div>
+    </div>
+</body>
+</html>
