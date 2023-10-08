@@ -1,0 +1,26 @@
+* {
+    border: solid black 1px;
+}
+
+body {
+    font-family: 'Young Serif', serif;
+}
+
+.parentWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.priceWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageWrapper {
+    width: 50%;
+}
+
+.cartWrapper {
+    width: 50%;
+}
