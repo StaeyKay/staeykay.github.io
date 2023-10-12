@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            border: solid black 1px;
-        }
-    </style>
+    <link rel="stylesheet" href="../ChanelWebsiteGrid.css">
+
 </head>
+
 <body>
-    <!-- parent wrapper -->
-    <div style="display: grid;grid-template-columns: 50% 50%;">
+    <!-- mainContainer -->
+    <div class="mainContainer">
 
-        <!-- image wrapper -->
+        <!-- leftContainer -->
         <div>
-            <img style="width: 100%; height: 100%;" src="./Chanelimage.jpg" alt="Image of a perfume">
+            <img src="./Chanelimage.jpg" alt="Chanelimage">
         </div>
 
-        <!-- add to cart wrapper -->
-        <div>
-            <h5>PERFUME</h5>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, perspiciatis. Cumque temporibus fuga incidunt impedit voluptate reprehenderit dolorum </p>
+        <!-- rightContainer -->
+        <div class="rightContainer">
+            <h6 style="letter-spacing: 7px;">PERFUME</h6>
+            <h2>Gabrielle Essence Eau De Parfum</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti, perspiciatis. Cumque temporibus fuga incidunt
+                impedit voluptate reprehenderit dolorum</p>
 
-            <!-- price wrapper -->
-            <div style="display: grid; grid-template-columns: 20% 30% ;">
-                <h2>$149.99</h2>
-                <p>$169.99</p>
-            </div>
-            
-            <!-- Add too cart button wrapper -->
-            <button>Add to Cart</button>
+            <!-- pricingContainer -->
 
+            <div class="pricingContainer">
+                <p style="color: green; font-size: 30px;"><b>$149.99</b></p>
+                <p style="text-decoration: line-through; margin-left: 25px;">$169.99</p>
+            </div><br><br><br>
+
+            <button type="button" onclick="myFunction()">Add to Cart</button>
         </div>
-        <div></div>
     </div>
+
+    <script>
+        function myFunction () {
+            window.alert("The item has been added to the cart on " + new Date())
+        }
+    </script>
 </body>
+
 </html>
