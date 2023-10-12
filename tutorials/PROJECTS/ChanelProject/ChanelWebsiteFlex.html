@@ -18,27 +18,36 @@
 
         <!-- image wrapper -->
         <div class="imageWrapper">
-            <img src="./Chanelimage.jpg" alt="Image of a perfume" style="height: 100%; width: 100%; object-fit: fill; ">
+            <img src="./Chanelimage.jpg" alt="Image of a perfume">
         </div>
 
         <!-- add to cart wrapper -->
         <div class="cartWrapper">
-            <h5>PERFUME</h5>
+            <h5 style="letter-spacing: 7px;">PERFUME</h5>
             <h1>Gabrielle Essence Eau De Parfum</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, perspiciatis. Cumque temporibus fuga
                 incidunt impedit voluptate reprehenderit dolorum </p>
 
             <!-- price wrapper -->
             <div class="priceWrapper">
-                <h2>$149.99</h2>
-                <p>$169.99</p>
+                <h2 style="color: green;">$149.99</h2>
+                <p style="margin-left: 15px; text-decoration-line: line-through;">$169.99</p>
             </div>
+            <br><br><br>
 
-            <!-- Add too cart button wrapper -->
-            <button>Add to Cart</button>
+            <!-- Add to cart button wrapper -->
+            <button type="button" onclick="myFunction()">Add to Cart</button>
+
+            <p id="demo"></p>
 
         </div>
     </div>
+    <script>
+        function myFunction() {
+
+            window.alert("The item has been added to the cart on " + new Date());
+        }
+    </script>
 </body>
 
 </html>
