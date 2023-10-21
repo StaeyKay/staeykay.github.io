@@ -54,11 +54,13 @@ figcaption {
     grid-template-columns: 37.5% 37.5% 25%;
     margin: 10px;
 }
+
 h3.row4 {
     background-color: #153d6f;
     color: white;
     /* height: 20px; */
 }
+
 p.row4 {
     margin: 10px;
 }
