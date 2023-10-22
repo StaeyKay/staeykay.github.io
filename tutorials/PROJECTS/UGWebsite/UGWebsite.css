@@ -37,7 +37,7 @@ img {
 
 figure {
     margin-inline-start: 5px;
-    margin-inline-end: 5px;
+    margin-inline-end: 10px;
 }
 
 button {
@@ -53,14 +53,49 @@ figcaption {
     display: grid;
     grid-template-columns: 37.5% 37.5% 25%;
     margin: 10px;
+    /* width: 100%; */
 }
 
 h3.row4 {
     background-color: #153d6f;
     color: white;
+    padding: 10px;
     /* height: 20px; */
 }
 
 p.row4 {
+    /* margin-left: 10px; */
+}
+
+hr.row4 {
     margin: 10px;
+}
+
+.bottomNavBar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #EDEDED;
+    padding: 10px;
+}
+
+.CollegesAdmiss {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #153d6f;
+    /* padding: 15px; */
+}
+
+h3.CollegesAdmiss {
+    color: #ffbf0d;
+}
+
+p.CollegesAdmiss {
+    color: white;
+}
+
+.finalFooter {
+    text-align: center;
+    background-color: #2B2834;
+    color: white;
+    margin-top: 0%;
 }
