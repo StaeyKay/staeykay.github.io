@@ -81,8 +81,8 @@ div>h3 {
     padding: 0px 9px;
 }
 
-
-hr.row4 {
+/* Stlying the horizontal line */
+div>hr {
     margin: 10px;
 }
 
@@ -100,11 +100,12 @@ hr.row4 {
     /* padding: 15px; */
 }
 
-h3.CollegesAdmiss {
+/* Styling of Get in Touch with us, Colleges, Admissions, Quick Links and Alumni */
+h3.CollegesAdmissHeadings {
     color: #ffbf0d;
 }
 
-p.CollegesAdmiss {
+p.CollegesAdmissPara {
     color: white;
 }
 
@@ -113,4 +114,27 @@ p.CollegesAdmiss {
     background-color: #2B2834;
     color: white;
     margin: 0px;
+}
+
+/* On screens that are 992px or less, set the display differently */
+@media screen and (max-width: 992px) {
+    .row4 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .CollegesAdmiss {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .topnav {
+        display: grid;
+        grid-template-columns: 60% 20% 20%;
+        padding: 10px;
+    }
+    .navmenu {
+        display: grid;
+        grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+        padding: 5px 6px;
+        font-size: 6px;
+    }
 }
