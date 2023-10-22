@@ -8,6 +8,7 @@ a {
     color: white;
 }
 
+/* First navigation menu styling */
 .topnav {
     display: grid;
     grid-template-columns: 80% 10% 10%;
@@ -17,6 +18,7 @@ a {
     padding: 10px;
 }
 
+/* Second top navigation menu styling */
 .navmenu {
     display: grid;
     background-color: #153d6f;
@@ -25,24 +27,30 @@ a {
     grid-template-columns: auto auto auto auto auto auto auto;
 }
 
-.topimage {
+/* .topimage {
     width: 100%;
     object-fit: cover;
-}
+} */
 
 img {
     width: 100%;
     object-fit: cover;
 }
 
+/* Images after News section */
 figure {
     margin-inline-start: 5px;
     margin-inline-end: 10px;
 }
 
+/* Featured link buttons styling */
 button {
     width: 100%;
     margin: 10px;
+    padding: 10px;
+    color: #EDEDED;
+    font-size: 15px;
+    border: 0;
 }
 
 figcaption {
@@ -52,20 +60,27 @@ figcaption {
 .row4 {
     display: grid;
     grid-template-columns: 37.5% 37.5% 25%;
-    margin: 10px;
+    margin: 6px;
     /* width: 100%; */
 }
 
-h3.row4 {
+h3.row4Headings {
     background-color: #153d6f;
     color: white;
     padding: 10px;
+    margin: 7px;
     /* height: 20px; */
 }
 
-p.row4 {
-    /* margin-left: 10px; */
+div>p {
+    color: #428bca;
+    padding: 0px 10px;
 }
+
+div>h3 {
+    padding: 0px 9px;
+}
+
 
 hr.row4 {
     margin: 10px;
@@ -97,5 +112,5 @@ p.CollegesAdmiss {
     text-align: center;
     background-color: #2B2834;
     color: white;
-    margin-top: 0%;
+    margin: 0px;
 }
