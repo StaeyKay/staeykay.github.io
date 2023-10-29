@@ -27,11 +27,6 @@ a {
     grid-template-columns: auto auto auto auto auto auto auto;
 }
 
-/* .topimage {
-    width: 100%;
-    object-fit: cover;
-} */
-
 img {
     width: 100%;
     object-fit: cover;
@@ -122,19 +117,26 @@ p.CollegesAdmissPara {
         display: grid;
         grid-template-columns: 100%;
     }
+
     .CollegesAdmiss {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+
     .topnav {
         display: grid;
         grid-template-columns: 60% 20% 20%;
         padding: 10px;
     }
+
     .navmenu {
         display: grid;
         grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
         padding: 5px 6px;
         font-size: 6px;
+    }
+
+    figcaption {
+        font-size: 8px;
     }
 }
