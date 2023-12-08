@@ -12,20 +12,18 @@
     <p id="demo"></p>
 
     <script>
-        let house {
-            houseType: 'Detached',
-            build: 'brick',
-            year: 2019,
-            price: 250000,
-            driveway: true
-        }
+        let colors = ["Red", "Orange", "Yellow", "Green", "Blue"];
 
         let text = "";
-        let x;
-        for (x in house) {
-            text = house[x] + "<br>";
+        for (color of colors) {
+            if (color === "Green") {
+                break;
+            }
+            else {
+                text += color + "<br>";
+            }
+            
         }
-
         document.getElementById("demo").innerHTML = text;
     </script>
 </body>
