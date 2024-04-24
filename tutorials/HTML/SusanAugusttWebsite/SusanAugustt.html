@@ -7,56 +7,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="./SusanAugust.css">
 </head>
+<style>
+    * {
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .button {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
 
 <body>
 
     <!-- main container -->
     <div>
-        <!-- navigation menu
-        <div style="display: grid; text-align: center; padding: 10px; grid-template-columns: 15% 70% 15%;
-        background-color: skyblue;">
-            <div>
-                <img src="logo-white.png" alt="logo-white" width="100%">
-            </div>
-            <div style="display: grid; grid-template-columns: auto auto auto auto auto auto auto;">
-                <a href="Link" style="text-decoration: none; color: white;">ABOUT</a>
-                <a href="Link" style="text-decoration: none; color: white;">HOME</a>
-                <a href="Link" style="text-decoration: none; color: white;">ABOUT ME</a>
-                <a href="Link" style="text-decoration: none; color: white;">MUSIC</a>
-                <a href="Link" style="text-decoration: none; color: white;">SEE ME LIVE</a>
-                <a href="Link" style="text-decoration: none; color: white;">MI INITIATIVES</a>
-                <a href="Link" style="text-decoration: none; color: white;">CONTACT</a>
-            </div>
-            <div>
-                <h4>SOCIAL MEDIA LINKS GO HERE</h4>
-            </div>
-        </div> -->
+
         <!-- the header -->
         <div style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover;">
             <!-- navigation menu -->
-        <div style="display: grid; text-align: center; padding: 10px; grid-template-columns: 15% 70% 15%;">
-            <div>
-                <img src="logo-white.png" alt="logo-white" width="100%">
+            <div style="display: grid; text-align: center; padding: 10px; grid-template-columns: 15% 70% 15%;">
+                <div>
+                    <img src="logo-white.png" alt="logo-white" width="100%">
+                </div>
+                <div style="display: grid; grid-template-columns: auto auto auto auto auto auto auto;">
+                    <a href="Link" style="text-decoration: none; color: white;">ABOUT</a>
+                    <a href="Link" style="text-decoration: none; color: white;">HOME</a>
+                    <a href="Link" style="text-decoration: none; color: white;">ABOUT ME</a>
+                    <a href="Link" style="text-decoration: none; color: white;">MUSIC</a>
+                    <a href="Link" style="text-decoration: none; color: white;">SEE ME LIVE</a>
+                    <a href="Link" style="text-decoration: none; color: white;">MI INITIATIVES</a>
+                    <a href="Link" style="text-decoration: none; color: white;">CONTACT</a>
+                </div>
+                <div>
+                    <h4 style="color: white;">SOCIAL MEDIA LINKS GO HERE</h4>
+                </div>
             </div>
-            <div style="display: grid; grid-template-columns: auto auto auto auto auto auto auto;">
-                <a href="Link" style="text-decoration: none; color: white;">ABOUT</a>
-                <a href="Link" style="text-decoration: none; color: white;">HOME</a>
-                <a href="Link" style="text-decoration: none; color: white;">ABOUT ME</a>
-                <a href="Link" style="text-decoration: none; color: white;">MUSIC</a>
-                <a href="Link" style="text-decoration: none; color: white;">SEE ME LIVE</a>
-                <a href="Link" style="text-decoration: none; color: white;">MI INITIATIVES</a>
-                <a href="Link" style="text-decoration: none; color: white;">CONTACT</a>
-            </div>
-            <div>
-                <h4>SOCIAL MEDIA LINKS GO HERE</h4>
-            </div>
-        </div>
         </div>
 
         <!-- about section -->
         <div style="display: grid; grid-template-columns: 50% 50%; padding: 20px;">
             <div>
-                <img src="./about.jpg" alt="about image">
+                <img src="./about.jpg" alt="about image" class="center">
             </div>
             <div>
                 <h3>SUSAN AUGUSTT</h3>
@@ -79,7 +87,7 @@
 
         <!-- latest tracks -->
         <div style="padding: 20px;">
-            <h3>LATEST TRACKS</h3>
+            <h3 style="text-align: center;">LATEST TRACKS</h3>
             <div style="display: grid; grid-template-columns: 20% 45% 35%;">
                 <div>
                     <img src="./about.jpg" alt="about me" width="100%">
@@ -104,32 +112,37 @@
                     <p>some images</p>
                 </div>
             </div>
-            <button type="button" style="align-content: center;">SEE MORE</button>
+            
+                <button type="button" class="button">SEE MORE</button>
+           
         </div>
 
         <!-- see me live -->
-
-        <div style="display: grid; grid-template-columns: 33.33% 33.33% 33.33%; padding: 20px;">
-            <div>
-                <img src="./about.jpg" alt="about image">
-                <h4>DETTY WAVE CONCERT</h4>
-                <p>24th May, 2024</p>
-                <p>Location: Accra Central Part</p>
+        <div>
+            <h3 style="text-align: center;">SEE ME LIVE</h3>
+            <div style="display: grid; grid-template-columns: 33.33% 33.33% 33.33%; padding: 20px;">
+                <div>
+                    <img src="./about.jpg" alt="about image">
+                    <h4>DETTY WAVE CONCERT</h4>
+                    <p>24th May, 2024</p>
+                    <p>Location: Accra Central Part</p>
+                </div>
+                <div>
+                    <img src="./about.jpg" alt="about image">
+                    <h4>DETTY WAVE CONCERT</h4>
+                    <p>24th May, 2024</p>
+                    <p>Location: Accra Central Part</p>
+                </div>
+                <div>
+                    <img src="./about.jpg" alt="about image">
+                    <h4>DETTY WAVE CONCERT</h4>
+                    <p>24th May, 2024</p>
+                    <p>Location: Accra Central Part</p>
+                </div>
+                <button class="button">SEE MORE</button>
             </div>
-            <div>
-                <img src="./about.jpg" alt="about image">
-                <h4>DETTY WAVE CONCERT</h4>
-                <p>24th May, 2024</p>
-                <p>Location: Accra Central Part</p>
-            </div>
-            <div>
-                <img src="./about.jpg" alt="about image">
-                <h4>DETTY WAVE CONCERT</h4>
-                <p>24th May, 2024</p>
-                <p>Location: Accra Central Part</p>
-            </div>
-            <button>SEE MORE</button>
         </div>
+
 
         <!-- own that stage -->
         <div style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover;">
