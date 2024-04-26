@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./SusanAugust.css">
 </head>
 <style>
-    * {
+    /* * {
         border: 1px solid black;
         box-sizing: border-box;
-    }
+    } */
 
     .center {
         display: block;
@@ -21,16 +21,24 @@
     }
 
     .button {
-        background-color: #04AA6D;
+        /* background-color: #04AA6D; */
         border: none;
-        color: white;
+        /* color: white; */
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+        display: flex;
         font-size: 16px;
-        margin: 4px 2px;
+        /* margin: 4px 2px; */
         cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        text-align: center;
+        background-color: black;
+        padding: 10px;
     }
 </style>
 
@@ -40,9 +48,11 @@
     <div>
 
         <!-- the header -->
-        <div style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div
+            style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover; height: 400px;">
             <!-- navigation menu -->
-            <div style="display: grid; text-align: center; padding: 10px; grid-template-columns: 15% 70% 15%;">
+            <div style="display: grid; text-align: center; padding: 10px; grid-template-columns: 15% 70% 15%; position: sticky;
+            top: 0;">
                 <div>
                     <img src="logo-white.png" alt="logo-white" width="100%">
                 </div>
@@ -82,6 +92,9 @@
                     her music. Apart from English, she sings in two local
                     languages, Twi and Ga. If one thing is certain.....
                 </p>
+                <div class="button">
+                    <button type="button">LEARN MORE</button>
+                </div>
             </div>
         </div>
 
@@ -92,7 +105,7 @@
                 <div>
                     <img src="./about.jpg" alt="about me" width="100%">
                 </div>
-                <div>
+                <div style="padding: 70px 10px;">
                     <h4>SEXY DEPRESSION</h4>
                     <p>24th May, 2024</p>
                 </div>
@@ -104,7 +117,7 @@
                 <div>
                     <img src="./about.jpg" alt="about me" width="100%">
                 </div>
-                <div>
+                <div style="padding: 70px 10px;">
                     <h4>Philomena</h4>
                     <p>24th May, 2024</p>
                 </div>
@@ -112,9 +125,9 @@
                     <p>some images</p>
                 </div>
             </div>
-            
-                <button type="button" class="button">SEE MORE</button>
-           
+            <div class="button">
+                <button type="button">SEE MORE</button>
+            </div>
         </div>
 
         <!-- see me live -->
@@ -139,26 +152,34 @@
                     <p>24th May, 2024</p>
                     <p>Location: Accra Central Part</p>
                 </div>
-                <button class="button">SEE MORE</button>
+            </div>
+            <div class="button">
+                <button type="button">SEE MORE</button>
             </div>
         </div>
 
 
         <!-- own that stage -->
-        <div style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div
+            style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover; margin: 0%;">
+            <img src="logo-white.png" alt="logo-white" style="margin-left: 20px;">
+            <p style="font-family: 'Brush Script MT', 'Lucida Handwriting', Cursive;">Susan Augustt</p>
             <h1>Hello</h1>
             <h1>Hello</h1>
             <h1>Hello</h1>
             <h1>Hello</h1>
             <h1>Hello</h1>
+            <div class="button">
+                <button type="button">REGISTER NOW</button>
+            </div>
         </div>
 
         <!-- footer section -->
-        <div style="background-color: black;">
-            <h3 style="color: white; text-align: center;">LET'S LINK UP</h3>
-            <img src="logo-white.png" alt="logo-white">
-            <p style="color: white; text-align: center;">info@susanaugustt.com</p>
-            <p style="color: white; text-align: center;">Social media links and music streaming links go here</p>
+        <div class="container">
+            <h3 style="color: white;">LET'S LINK UP</h3>
+            <img src="logo-white.png" alt="logo-white" class="center">
+            <a href="Link" style="text-decoration: none; color: white;">info@susanaugustt.com</a>
+            <p style="color: white;">Social media links and music streaming links go here</p>
         </div>
     </div>
 </body>
