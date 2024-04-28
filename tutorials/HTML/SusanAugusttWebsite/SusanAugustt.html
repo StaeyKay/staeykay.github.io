@@ -31,8 +31,8 @@
         font-size: 16px;
         /* margin: 4px 2px; */
         cursor: pointer;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
     }
 
     .container {
@@ -49,7 +49,7 @@
 
         <!-- the header -->
         <div
-            style="background-image: url('./about.jpg'); background-repeat: no-repeat; background-size: cover; height: 400px;">
+            id="Home" style="background-image: url('./bgImg.jpg'); background-repeat: no-repeat; background-size: cover; height: 700px;">
             <!-- navigation menu -->
             <div style="display: grid; text-align: center; padding: 10px; grid-template-columns: 15% 70% 15%; position: sticky;
             top: 0;">
@@ -57,22 +57,35 @@
                     <img src="logo-white.png" alt="logo-white" width="100%">
                 </div>
                 <div style="display: grid; grid-template-columns: auto auto auto auto auto auto auto;">
-                    <a href="Link" style="text-decoration: none; color: white;">ABOUT</a>
-                    <a href="Link" style="text-decoration: none; color: white;">HOME</a>
-                    <a href="Link" style="text-decoration: none; color: white;">ABOUT ME</a>
-                    <a href="Link" style="text-decoration: none; color: white;">MUSIC</a>
-                    <a href="Link" style="text-decoration: none; color: white;">SEE ME LIVE</a>
-                    <a href="Link" style="text-decoration: none; color: white;">MI INITIATIVES</a>
-                    <a href="Link" style="text-decoration: none; color: white;">CONTACT</a>
+                    <a href="#Home" style="text-decoration: none; color: white;">HOME</a>
+                    <a href="#SusanAugustt" style="text-decoration: none; color: white;">ABOUT ME</a>
+                    <a href="#LatestTracks" style="text-decoration: none; color: white;">MUSIC</a>
+                    <a href="#SeeMeLive" style="text-decoration: none; color: white;">SEE ME LIVE</a>
+                    <a href="Link" style="text-decoration: none; color: white;">MY INITIATIVES</a>
+                    <a href="#Contact" style="text-decoration: none; color: white;">CONTACT</a>
                 </div>
                 <div>
                     <h4 style="color: white;">SOCIAL MEDIA LINKS GO HERE</h4>
                 </div>
             </div>
+            <div style="color: white; padding: 30px;">
+                <h1 style="margin-bottom: 0px;">SLIDE SHOW CAPTION GOES HERE</h1>
+                <h1 style="margin-top: 0px;">EXTRA TEXT</h1><br/>
+                <p style="max-width: 50%;">Susan Augustt is an abundantly gifted singer and
+                    live performer who moves seamlessly between genres
+                    and styles. She creates neo-afro soul pieces
+                    poignantly blended with indigenous Ghanaian rhythms
+                    that influence her fuse with the soul,
+                </p><br/><br/>
+                <div>
+                    <button type="button" style="padding: 12px;"><b>CALL TO ACTION</b></button>
+                </div>
+            </div>
         </div>
 
         <!-- about section -->
-        <div style="display: grid; grid-template-columns: 50% 50%; padding: 20px;">
+
+        <div id="SusanAugustt" style="display: grid; grid-template-columns: 50% 50%; padding: 20px;">
             <div>
                 <img src="./about.jpg" alt="about image" class="center">
             </div>
@@ -98,8 +111,9 @@
             </div>
         </div>
 
+
         <!-- latest tracks -->
-        <div style="padding: 20px;">
+        <div id="LatestTracks" style="padding: 20px;">
             <h3 style="text-align: center;">LATEST TRACKS</h3>
             <div style="display: grid; grid-template-columns: 20% 45% 35%;">
                 <div>
@@ -110,14 +124,21 @@
                     <p>24th May, 2024</p>
                 </div>
                 <div style="padding: 80px 10px;">
-                    <a href="https://www.youtube.com/channel/UCKKeYTb2V8T3tyo6sTVq0lg" target="_blank"><img src="youtubeLogo.png" alt="youTube link" style="width:42px;height:42px;"></a>
-                    <a href="https://open.spotify.com/album/3Fuh0ERsJBJ1kb8AwwUpTf?si=XmPLbV87Sbqy0Kdv1byKpA&nd=1&dlsi=dcd46e8dbc774534" target="_blank"><img src="spotifyLogo.png" alt="spotify link" style="width:42px;height:42px;"></a>
-                    <a href="https://music.apple.com/us/album/effects-single/1463074709?app=music" target="_blank"><img src="appleLogo.png" alt="appleMusic link" style="width:42px;height:42px;"></a>
-                    <a href="https://www.boomplay.com/share/artist/3465952?srModel=COPYLINK&srList=ANDROID" target="_blank"><img src="boomplayLogo.png" alt="boomplay link" style="width:40px;height:40px;"></a>
-                    <a href="https://susanaugustt.bandcamp.com/album/effects-ep" target="_blank"><img src="bandcampLogo.png" alt="bandcamp link" style="width:42px;height:42px;"></a>
+                    <a href="https://www.youtube.com/channel/UCKKeYTb2V8T3tyo6sTVq0lg" target="_blank"><img
+                            src="youtubeLogo.png" alt="youTube link" style="width:42px;height:42px;"></a>
+                    <a href="https://open.spotify.com/album/3Fuh0ERsJBJ1kb8AwwUpTf?si=XmPLbV87Sbqy0Kdv1byKpA&nd=1&dlsi=dcd46e8dbc774534"
+                        target="_blank"><img src="spotifyLogo.png" alt="spotify link"
+                            style="width:42px;height:42px;"></a>
+                    <a href="https://music.apple.com/us/album/effects-single/1463074709?app=music" target="_blank"><img
+                            src="appleLogo.png" alt="appleMusic link" style="width:42px;height:42px;"></a>
+                    <a href="https://www.boomplay.com/share/artist/3465952?srModel=COPYLINK&srList=ANDROID"
+                        target="_blank"><img src="boomplayLogo.png" alt="boomplay link"
+                            style="width:40px;height:40px;"></a>
+                    <a href="https://susanaugustt.bandcamp.com/album/effects-ep" target="_blank"><img
+                            src="bandcampLogo.png" alt="bandcamp link" style="width:42px;height:42px;"></a>
                 </div>
             </div>
-            <br/>
+            <br />
             <div style="display: grid; grid-template-columns: 20% 45% 35%;">
                 <div>
                     <img src="./about.jpg" alt="about me" width="100%">
@@ -127,11 +148,18 @@
                     <p>24th May, 2024</p>
                 </div>
                 <div style="padding: 80px 10px;">
-                    <a href="https://www.youtube.com/channel/UCKKeYTb2V8T3tyo6sTVq0lg" target="_blank"><img src="youtubeLogo.png" alt="youTube link" style="width:42px;height:42px;"></a>
-                    <a href="https://open.spotify.com/album/3Fuh0ERsJBJ1kb8AwwUpTf?si=XmPLbV87Sbqy0Kdv1byKpA&nd=1&dlsi=dcd46e8dbc774534" target="_blank"><img src="spotifyLogo.png" alt="spotify link" style="width:42px;height:42px;"></a>
-                    <a href="https://music.apple.com/us/album/effects-single/1463074709?app=music" target="_blank"><img src="appleLogo.png" alt="appleMusic link" style="width:42px;height:42px;"></a>
-                    <a href="https://www.boomplay.com/share/artist/3465952?srModel=COPYLINK&srList=ANDROID" target="_blank"><img src="boomplayLogo.png" alt="boomplay link" style="width:40px;height:40px;"></a>
-                    <a href="https://susanaugustt.bandcamp.com/album/effects-ep" target="_blank"><img src="bandcampLogo.png" alt="bandcamp link" style="width:42px;height:42px;"></a>
+                    <a href="https://www.youtube.com/channel/UCKKeYTb2V8T3tyo6sTVq0lg" target="_blank"><img
+                            src="youtubeLogo.png" alt="youTube link" style="width:42px;height:42px;"></a>
+                    <a href="https://open.spotify.com/album/3Fuh0ERsJBJ1kb8AwwUpTf?si=XmPLbV87Sbqy0Kdv1byKpA&nd=1&dlsi=dcd46e8dbc774534"
+                        target="_blank"><img src="spotifyLogo.png" alt="spotify link"
+                            style="width:42px;height:42px;"></a>
+                    <a href="https://music.apple.com/us/album/effects-single/1463074709?app=music" target="_blank"><img
+                            src="appleLogo.png" alt="appleMusic link" style="width:42px;height:42px;"></a>
+                    <a href="https://www.boomplay.com/share/artist/3465952?srModel=COPYLINK&srList=ANDROID"
+                        target="_blank"><img src="boomplayLogo.png" alt="boomplay link"
+                            style="width:40px;height:40px;"></a>
+                    <a href="https://susanaugustt.bandcamp.com/album/effects-ep" target="_blank"><img
+                            src="bandcampLogo.png" alt="bandcamp link" style="width:42px;height:42px;"></a>
                 </div>
             </div>
             <div class="button">
@@ -140,7 +168,7 @@
         </div>
 
         <!-- see me live -->
-        <div>
+        <div id="SeeMeLive">
             <h3 style="text-align: center;">SEE ME LIVE</h3>
             <div style="display: grid; grid-template-columns: 33.33% 33.33% 33.33%; padding: 20px;">
                 <div>
@@ -184,7 +212,7 @@
         </div>
 
         <!-- footer section -->
-        <div class="container">
+        <div id="Contact" class="container">
             <h3 style="color: white;">LET'S LINK UP</h3>
             <img src="logo-white.png" alt="logo-white" class="center">
             <a href="Link" style="text-decoration: none; color: white;">info@susanaugustt.com</a>
