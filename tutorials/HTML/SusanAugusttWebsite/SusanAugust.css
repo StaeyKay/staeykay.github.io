@@ -1,7 +1,111 @@
-*{
-    box-sizing: border-box;
-}
+/* * {
+        border: 1px solid black;
+        box-sizing: border-box;
+    } */
 
-div.banner {
-    background-image: url("./bg.jpg");
-}
+    /* first background image styling */
+    .bgImage {
+        background-image: url('./bgImg.jpg'); 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        /* background-position: center; */
+        height: 700px;
+    }
+
+    /* about section styling */
+    .aboutSection {
+        display: grid; 
+        grid-template-columns: 50% 50%; 
+        /* padding: 50px; */
+    }
+    /* about me image styling */
+    .aboutmeImg {
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .button {
+        /* background-color: #04AA6D; */
+        border: none;
+        /* color: white; */
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        /* margin: 4px 2px; */
+        cursor: pointer;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .container {
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .mainnavmenu {
+        display: grid;
+        text-align: center;
+        padding: 10px;
+        grid-template-columns: 10% 70% 20%;
+        position: sticky;
+        top: 0;
+    }
+
+    .subnavmenu {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+
+
+    @media screen and (max-width: 992px) {
+        .mainnavmenu {
+            display: grid;
+            text-align: center;
+            padding: 10px;
+            grid-template-columns: 5% 75% 20%;
+            position: sticky;
+            top: 0;
+        }
+        .subnavmenu {
+            display: grid;
+            grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+        }
+
+        body {
+            font-size: small;
+        }
+
+        .smLinks img {
+            width:5px;
+            height:5px;
+        }
+        .bgImage {
+            background-size: contain;
+        }
+        /* about section styling */
+    .aboutSection {
+        display: grid; 
+        grid-template-columns: 40% 60%; 
+        /* padding: 50px; */
+    }
+        .aboutmeImg {
+            padding: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        img {
+            width: 100%;
+        }
+        
+
+    }
